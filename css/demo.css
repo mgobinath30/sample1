@@ -70,7 +70,7 @@ circle:focus {
 
 .btn {
 	position: relative;
-	margin: 0;
+	margin: 20px;
 	padding: 0;
 	border: 0;
 	background: none;
@@ -584,7 +584,7 @@ box-shadow: 0 0 0 2px #FFCBA4;
 		color: currentColor;
 	}
 	.info {
-		font-size: 0.95em;
-		width: 100vw;
+		font-size: 1.25em;
+		width: 85vw;
 	}
 }
