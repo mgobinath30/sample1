@@ -17,7 +17,7 @@ body {
 	font-family: Jenmanship2020;
 	/* letter-spacing: 0.1em; */
 	color: #1f1f21;
-	background: #cecece;
+	background: #E1B593;
 	height: 100vh;
 	overflow: hidden;
 }
@@ -43,7 +43,12 @@ a {
 
 a:hover,
 a:focus {
-	color: #c2292e;
+	color: white;
+}
+
+circle:hover,
+circle:focus {
+	color: black;
 }
 
 .hidden {
@@ -76,7 +81,13 @@ a:focus {
 }
 
 .btn:hover {
-	color: #c2292e;
+	color: #FFCBA4;
+
+	/* color: white; */
+}
+
+.yo:hover {
+color: black;
 }
 
 .btn--nav {
@@ -168,14 +179,21 @@ a:focus {
 .room__side--right {
 	width: 4000px; /* depth */
 	height: 100vh;
-	background: #dbdbdb;
+	/* background: #dbdbdb; */
+
+	background: #F8C59F;
 }
 
 .room__side--back {
 	width: 100vw;
 	height: 100vh;
-	background: #e9e9e9;
-	box-shadow: 0 0 0 2px #e9e9e9;
+	/* background: #e9e9e9;
+	box-shadow: 0 0 0 2px #e9e9e9; */
+
+background: #FFCBA4;
+box-shadow: 0 0 0 2px #FFCBA4;
+
+
 	transform: translate3d(0, 0, -4000px) rotate3d(1,0,0,0.1deg) rotate3d(1,0,0,0deg);
 	/* Rotation due to rendering bug in Chrome when loader slides up (images seem cut off) */
 }
@@ -190,13 +208,15 @@ a:focus {
 .room__side--left {
 	justify-content: flex-start;
 	transform: rotate3d(0, 1, 0, 90deg);
-	transform-origin: 0 50%;
+	transform-origin: 0 20%;
 }
 
 .room__side--bottom {
 	width: 100vw; /* depth */
 	height: 4000px;
-	background: #d0d0d0;
+	/* background: #d0d0d0; */
+	background: #E1B593;
+
 	transform: rotate3d(1, 0, 0, 90deg) translate3d(0, -4000px, 0);
 	transform-origin: 50% 0%;
 }
@@ -213,6 +233,12 @@ a:focus {
 	margin: 0 5%;
 	transform: translate3d(0,0,10px);
 	backface-visibility: hidden;
+}
+
+.bottom-test {
+	/* transform: rotate3d(1, 0, 0, 90deg) translate3d(0, -4000px, 0) !important;
+	transform-origin: 50% 0% !important; */
+	/* transform: translate3d(200px,0,40px) !important; */
 }
 
 /* Content */
@@ -417,10 +443,15 @@ a:focus {
 
 .overlay--info {
 	background: rgba(255, 203, 164,0.8);
+
+	/* background: rgba(255, 255, 255,0.9); */
+
 }
 
 .overlay--menu {
 	background: rgba(255, 203, 164,0.9);
+
+	/* background: rgba(255, 255, 255,0.9); */
 }
 
 .js .overlay--active {
@@ -446,12 +477,12 @@ a:focus {
 }
 
 .menu__link {
-	color: #fff;
+	color: rgb(255, 79, 79);
 }
 
 .menu__link:focus,
 .menu__link:hover {
-	color: #1f1f21;
+	color: #0000ff;
 }
 
 .info {
