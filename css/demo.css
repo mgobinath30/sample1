@@ -122,7 +122,8 @@ color: black;
 
 .btn--toggle.btn--active {
 	z-index: 100;
-	color: #fff;
+	color: black;
+	
 }
 
 .btn--toggle.btn--active:hover {
@@ -490,7 +491,7 @@ box-shadow: 0 0 0 2px #FFCBA4;
 
 .info {
 	color: black;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	line-height: 1.4;
 	width: 60vw;
 	min-width: calc(320px - 2em);
