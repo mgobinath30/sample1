@@ -25,13 +25,20 @@ body {
 	position: absolute;
 	bottom: 2vw;
 	right: 2vw;
+
+	/* index < than overlay so it disssaprss but above evreything else */
+	z-index: 9; 
 	/* padding: 2vw; */
 }
 
 .footer-social {
     width: 25px;
 	height: 25px;
-	opacity: 0.5;
+	opacity: 0.6;
+}
+
+footer {
+	opacity: 0.6;
 }
 
 .footer-social:hover {
