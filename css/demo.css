@@ -21,12 +21,21 @@ body {
 }
 
 .footer {
-	text-align: center;
+	text-align: right;
+	position: absolute;
+	bottom: 2vw;
+	right: 2vw;
+	/* padding: 2vw; */
 }
 
 .footer-social {
     width: 25px;
-    height: 25px;
+	height: 25px;
+	opacity: 0.5;
+}
+
+.footer-social:hover {
+	opacity: 1;
 }
 
 .footer-link {
