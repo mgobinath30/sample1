@@ -200,8 +200,8 @@
 		var onNavigatePrevFn = function() { navigate('prev'); },
 			onNavigateNextFn = function() { navigate('next'); };
 
-		DOM.nav.leftCtrl.addEventListener('click', onNavigatePrevFn);
-		DOM.nav.rightCtrl.addEventListener('click', onNavigateNextFn);
+		// DOM.nav.leftCtrl.addEventListener('click', onNavigatePrevFn);
+		// DOM.nav.rightCtrl.addEventListener('click', onNavigateNextFn);
 
 		// Menu click.
 		DOM.menuCtrl.addEventListener('click', toggleMenu);
