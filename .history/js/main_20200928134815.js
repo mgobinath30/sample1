@@ -347,10 +347,9 @@
 	}
 
 	function showMenu() {
-		debugger
 		// Button becomes cross.
 		DOM.menuCtrl.classList.add('btn--active');
-		document.querySelector('.aboutUsContainer').setAttribute('style','display:block');
+		DOM.menuOverlay.setAttribute('style','display:block')
 		// Remove tilt.
 		removeTilt();
 		// Add adjacent rooms.
@@ -392,8 +391,6 @@
 	function closeMenu() {
 		// Button becomes menu.
 		DOM.menuCtrl.classList.remove('btn--active');
-		document.querySelector('.aboutUsContainer').removeAttribute('style');
-
 		// Apply room transition.
 		applyRoomTransition(roomTransition);
 		// Show current slide.
@@ -569,7 +566,7 @@
 
 	// Preload all the images.
 	imagesLoaded(DOM.scroller, function() {
-		var extradelay = 200;
+		var extradelay = 300;
 		// Slide out loader.
 		anime({
 			targets: DOM.loader,

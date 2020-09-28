@@ -350,7 +350,7 @@
 		debugger
 		// Button becomes cross.
 		DOM.menuCtrl.classList.add('btn--active');
-		document.querySelector('.aboutUsContainer').setAttribute('style','display:block');
+		document.querySelector('.overlay--menu').setAttribute('style','display:block');
 		// Remove tilt.
 		removeTilt();
 		// Add adjacent rooms.
@@ -392,8 +392,6 @@
 	function closeMenu() {
 		// Button becomes menu.
 		DOM.menuCtrl.classList.remove('btn--active');
-		document.querySelector('.aboutUsContainer').removeAttribute('style');
-
 		// Apply room transition.
 		applyRoomTransition(roomTransition);
 		// Show current slide.
