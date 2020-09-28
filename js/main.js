@@ -63,7 +63,7 @@
 	// The menu items
 	DOM.menuItems = DOM.menuOverlay.querySelectorAll('.menu > .menu__item');
 	// The info button.
-	DOM.infoCtrl = DOM.content.querySelector('.btn--info');
+	// DOM.infoCtrl = DOM.content.querySelector('.btn--info');
 	// The info overlay.
 	DOM.infoOverlay = DOM.content.querySelector('.overlay--info');
 	// The info text.
@@ -198,7 +198,7 @@
 		DOM.menuCtrl.addEventListener('click', toggleMenu);
 
 		// Info click.
-		DOM.infoCtrl.addEventListener('click', toggleInfo);
+		// DOM.infoCtrl.addEventListener('click', toggleInfo);
 	}
 
 	function applyRoomTransform(transform) {
@@ -450,10 +450,10 @@
 		if( isNavigating ) {
 			return false;
 		}
-		if( DOM.infoCtrl.classList.contains('btn--active') ) {
-			// Close it.
-			closeInfo();
-		}
+		// if( DOM.infoCtrl.classList.contains('btn--active') ) {
+		// 	// Close it.
+		// 	closeInfo();
+		// }
 		else {
 			// Open it.
 			showInfo();
@@ -462,7 +462,7 @@
 
 	function showInfo() {
 		// Button becomes cross.
-		DOM.infoCtrl.classList.add('btn--active');
+		// DOM.infoCtrl.classList.add('btn--active');
 		// Remove tilt.
 		removeTilt();
 		// Hide current slide.
@@ -515,7 +515,7 @@
 
 	function closeInfo() {
 		// Button becomes info.
-		DOM.infoCtrl.classList.remove('btn--active');
+		// DOM.infoCtrl.classList.remove('btn--active');
 		// Apply room transition.
 		applyRoomTransition(roomTransition);
 		// Show current slide.
