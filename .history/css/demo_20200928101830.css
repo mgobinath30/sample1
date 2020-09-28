@@ -438,7 +438,7 @@ footer {
 	opacity: 0;
 }
 
-.infoLink{
+.pointerEvents{
 	pointer-events:auto;
 }
 

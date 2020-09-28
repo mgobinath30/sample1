@@ -321,8 +321,9 @@ circle:focus {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%;
+	width: 70vw;
 	height: 100%;
+	margin: 0vh 0 0 10vw;
 	pointer-events: none;
 	opacity: 0;
 }
@@ -436,10 +437,6 @@ footer {
 	height: 100%;
 	pointer-events: none;
 	opacity: 0;
-}
-
-.infoLink{
-	pointer-events:auto;
 }
 
 .center-loading-image {
@@ -595,6 +592,8 @@ footer {
 	}
 	.slide {
 		width: 100%;
+		/* margin: 7vh 0 0 0; */
+		margin: 0 !important;
 	}
 	.center-main-image {
 		width: 18vh;
