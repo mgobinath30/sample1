@@ -504,28 +504,8 @@ footer {
 	line-height: 2;
 }
 
-.loader {
-	display: flex;
-}
-
-.loader div {
-	width: 20px;
-	height: 20px;
-	margin: -20px 0.5em 0;
-	border: 2px solid black;
-	background: transparent;
-	animation: anim-loader 0.8s alternate infinite forwards;
-	animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
 .copyright {
-	color: #1f1f21;
-}
-
-.loader div:nth-child(2) {
-	border-radius: 50%;
-	/* background: white; */
-	animation-delay: 0.15s;
+	color: #1f1f21 !important;
 }
 
 .loader div:nth-child(3) {
@@ -538,7 +518,30 @@ footer {
 	}
 }
 
+.rotate {
+	animation: rotation 2s infinite linear;
+	max-width:100%;
+	max-height:100%;
+  }
+
+  .new-loader {
+	  width: 120px;
+  }
+
+  @keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }
+
 @media screen and (max-width: 50em) {
+
+	.room__img {
+		/* opacity: 0.4; */
+	}
 	
 .content {
 	padding: 35px 10px;
