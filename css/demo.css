@@ -539,6 +539,10 @@ footer {
 
 @media screen and (max-width: 50em) {
 
+	.new-loader {
+		width: 60px;
+	}
+
 	.room__img {
 		/* opacity: 0.4; */
 	}
