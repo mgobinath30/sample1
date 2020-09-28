@@ -5,7 +5,6 @@
 	box-sizing: border-box;
 }
 
-
 /* Custom Font */
 
 @font-face {
@@ -257,12 +256,6 @@ circle:focus {
 	backface-visibility: hidden;
 }
 
-.bottom-test {
-	/* transform: rotate3d(1, 0, 0, 90deg) translate3d(0, -4000px, 0) !important;
-	transform-origin: 50% 0% !important; */
-	/* transform: translate3d(200px,0,40px) !important; */
-}
-
 
 /* Content */
 
@@ -289,44 +282,6 @@ circle:focus {
 	font-size: 1.165em;
 	font-weight: normal;
 	margin: 0.5em 0 0 0;
-}
-
-
-/* Top Navigation Style */
-
-.codrops-links {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 2.75em;
-	margin: 0 2em 0 0;
-	text-align: center;
-	white-space: nowrap;
-	border: 2px solid;
-	background: #fff;
-}
-
-.codrops-links::after {
-	content: '';
-	position: absolute;
-	top: -5%;
-	left: calc(50% - 1px);
-	width: 2px;
-	height: 110%;
-	background: currentColor;
-	transform: rotate3d(0, 0, 1, 22.5deg);
-}
-
-.codrops-icon {
-	display: inline-block;
-	padding: 0 0.65em;
-}
-
-.subject {
-	font-size: 1.5em;
-	margin: 0 auto;
-	color: #c2292e;
 }
 
 
