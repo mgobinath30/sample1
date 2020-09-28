@@ -13,6 +13,16 @@
 	font-style: normal;
 }
 
+.desktop-only {
+	display: block;
+	visibility: visible;
+}
+
+.mobile-only {
+	display: none;
+	visibility: hidden;
+}
+
 body {
 	font-family: Jenmanship2020;
 	color: #1f1f21;
@@ -539,6 +549,15 @@ footer {
 
 @media screen and (max-width: 50em) {
 
+	.desktop-only {
+		display: none;
+		visibility: hidden;
+	}
+	
+	.mobile-only {
+		display: block;
+		visibility: visible;
+	}
 	.new-loader {
 		width: 60px;
 	}
